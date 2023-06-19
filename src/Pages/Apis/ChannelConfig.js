@@ -49,6 +49,7 @@ export class ChannelConfig extends Component {
             ],
 
             selectedApiType: "",
+            
         }
     }
 
