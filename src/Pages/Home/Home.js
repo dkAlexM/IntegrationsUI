@@ -43,7 +43,7 @@ export class Home extends Component {
 
                 <Row>
 
-                    <Col>
+                    <Col className="col-8">
 
                         <Card className="shadow border-0" style={{ width: '36rem' }}>
                             <Card.Img variant="top" src={image.url} />
@@ -60,15 +60,13 @@ export class Home extends Component {
                     <Col>
 
                         <p>... para escrever o que me apetecer...</p>
-
-
-                        {/* <div>
+<div>
 
                             <Counter incrementValue={valueValue1} />
                             <Counter incrementValue={valueValue2} />
                             <Counter incrementValue={valueValue3} />
                             <Counter incrementValue={valueValue4} />
-                        </div> */}
+                        </div> 
 
                     </Col>
 

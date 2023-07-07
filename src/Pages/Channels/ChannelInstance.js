@@ -317,7 +317,7 @@ export class ChannelInstance extends Component {
                         </thead>
 
                         <tbody>
-                            {channelInstances.map(ci =>
+                            {channelInstances.map((ci, key) =>
                                 <tr key={ci.id}>
                                     <td className="col-2"><strong><small>{ci.name}</small></strong></td>
                                     <td className="col-1">{getChannelConfig(ci.code) ? <img alt="" src={getChannelConfig(ci.code).image} height={getChannelConfig(ci.code).iconSize}></img> : ''}</td>
@@ -347,6 +347,7 @@ export class ChannelInstance extends Component {
                                 
 
                     {/* modal */}
+                    {modalTitle ?
                     <div className="modal fade" id="channelInstanceDetail" tabIndex="-1" aria-hidden="true">
                         <div className="modal-dialog modal-lg modal-dialog-centered">
                             <div className="modal-content">
@@ -448,7 +449,7 @@ export class ChannelInstance extends Component {
                             </div>
                         </div>
                     </div>
-                    
+                    :''}
                 
                 </div>
 

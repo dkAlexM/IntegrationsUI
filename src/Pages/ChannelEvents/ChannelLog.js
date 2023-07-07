@@ -56,7 +56,7 @@ export class ChannelLog extends Component {
     refreshList() {
         fetch(getAppEndpoint.API_URL + 'ChannelLog/list?pageIndex=' + 0 + '&pageSize=' + 10)
             .then(response => response.json())
-            .then(data => {
+            .then(data => { 
                 this.setState({ logs: data.response, logsWithoutFilter: data.response });
             });
     }
